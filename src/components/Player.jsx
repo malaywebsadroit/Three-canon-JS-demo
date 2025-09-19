@@ -15,8 +15,8 @@ export default function Player() {
   const velocity = new Vector3();
 
   api.velocity.subscribe((v) => velocity.fromArray(v));
+  
   useFrame(() => {
-
     const moveSpeed = 5;
     let direction = new Vector3();
 
